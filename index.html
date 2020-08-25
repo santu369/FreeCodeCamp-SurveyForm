@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FreeCodeCamp - Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="FreeCodeCamp - Tribute Page">
+    <meta name="keywords" content="HTML,CSS,Survey Form">
+    <meta name="author" content="Shiva Santosh Jana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="center">
+        <h1 id="title">Student Details Survey Form</h1>
+        <p id="description">Survey To Capture Student Details</p>
+        <div id="content">
+          <div id="div-form">
+            <form id="survey-form" action="javascript:void(0);">
+              <div class="component">
+                <label class="label" for="name" id="name-label">Name:</label>
+                <input class="input-box" type="text" id="name" name="name" placeholder="Enter your Name" required>
+              </div>
+              <div class="component">
+                <label class="label" for="email" id="email-label">Email:</label>
+                <input class="input-box" type="email" id="email" name="email" placeholder="Enter your Email" required>
+              </div>
+              <div class="component">
+                <label class="label" for="number" id="number-label">Age:</label>
+                <input class="input-box" type="number" id="number" name="age" min="2" max="17" placeholder="Enter Age" required>
+              </div>
+              <div class="component">
+                <label class="label" for="dropdown" id="number-label">Highest Education:</label>
+                <select class="input-lov" id="dropdown" name="highest-education">
+                  <option value="" disabled selected>Select Your Highest Education</option>
+                  <option value="volvo">Play group (pre-nursery)</option>
+                  <option value="volvo">Nursery</option>
+                  <option value="saab">LKG (Junior Kindergarten)</option>
+                  <option value="saab">UKG (Senior Kindergarten)</option>
+                  <option value="fiat">Class I</option>
+                  <option value="audi">Class II</option>
+                  <option value="volvo">Class III</option>
+                  <option value="saab">Class IV</option>
+                  <option value="fiat">Class V</option>
+                  <option value="audi">Class VI</option>
+                  <option value="audi">Class VII</option>
+                  <option value="audi">Class VIII</option>
+                  <option value="audi">Class IX</option>
+                  <option value="audi">Class X</option>
+                </select>
+              </div>
+              <div class="component-halfs">
+                <div class="component" id="component-half-1">
+                  <label class="label">Gender:</label>
+                    <input class="input-radio" type="radio" id="male" name="gender" value="male">
+                    <label class="small-label" for="male">Male</label><br>
+                    <input class="input-radio" type="radio" id="female" name="gender" value="female">
+                    <label class="small-label" for="female">Female</label><br>
+                    <input class="input-radio" type="radio" id="prefer-not-to-answer" name="gender" value="other">
+                    <label class="small-label" for="prefer-not-to-answer">Prefer Not To Answer</label><br>
+                </div>
+                <div class="component" id="component-half-2">
+                  <label class="label">Exam Board:</label>
+                    <input class="input-radio" type="radio" id="ssc" name="exam-board" value="ssc">
+                    <label class="small-label" for="ssc">SSC</label><br>
+                    <input class="input-radio" type="radio" id="cbse" name="exam-board" value="cbse">
+                    <label class="small-label" for="cbse">CBSE</label><br>
+                    <input class="input-radio" type="radio" id="other" name="exam-board" value="other">
+                    <label class="small-label" for="other">Other</label>
+                </div>
+              </div>
+              <div class="component">
+                <label class="label">Preferred Language:</label>
+                <div class="component-halfs">
+                   <div id="component-half-1">
+                  <input class="input-checkbox" type="checkbox" id="telugu" name="preferred-language" value="other">
+                   <label class="small-label" for="telugu">Telugu</label><br>
+                   <input class="input-checkbox" type="checkbox" id="tamil" name="preferred-language" value="other">
+                   <label class="small-label" for="tamil">Tamil</label><br>
+                   <input class="input-checkbox" type="checkbox" id="kannada" name="preferred-language" value="other">
+                   <label class="small-label" for="kannada">Kannada</label><br>
+                   <input class="input-checkbox" type="checkbox" id="bengali" name="preferred-language" value="other">
+                   <label class="small-label" for="bengali">Bengali</label><br>
+                   <input class="input-checkbox" type="checkbox" id="urdu" name="preferred-language" value="other">
+                   <label class="small-label" for="urdu">Urdu</label><br>
+                   <input class="input-checkbox" type="checkbox" id="punjabi" name="preferred-language" value="other">
+                   <label class="small-label" for="punjabi">Punjabi</label><br>
+                   <input class="input-checkbox" type="checkbox" id="marathi" name="preferred-language" value="other">
+                   <label class="small-label" for="marathi">Marathi</label><br>
+                   </div>
+                   <div id="component-half-2">
+                   <input class="input-checkbox" type="checkbox" id="gujarati" name="preferred-language" value="other">
+                   <label class="small-label" for="gujarati">Gujarati</label><br>
+                   <input class="input-checkbox" type="checkbox" id="odia" name="preferred-language" value="other">
+                   <label class="small-label" for="odia">Odia</label><br>
+                   <input class="input-checkbox" type="checkbox" id="malayalam" name="preferred-language" value="other">
+                   <label class="small-label" for="malayalam">Malayalam</label><br>
+                   <input class="input-checkbox" type="checkbox" id="santali" name="preferred-language" value="other">
+                   <label class="small-label" for="santali">Santali</label><br>
+                   <input class="input-checkbox" type="checkbox" id="sanskrit" name="preferred-language" value="other">
+                   <label class="small-label" for="sanskrit">Sanskrit</label><br>
+                   <input class="input-checkbox" type="checkbox" id="hindi" name="preferred-language" value="other">
+                   <label class="small-label" for="hindi">Hindi</label><br>
+                   <input class="input-checkbox" type="checkbox" id="english" name="preferred-language" value="other">
+                   <label class="small-label" for="english">English</label><br>
+                   </div>
+                </div>
+              </div>
+              <div class="component">
+                <label class="label" for="address">Address:</label></br>
+                <textarea class="input-area" type="text" id="address" name="name" placeholder="Enter your Address here..."></textarea>
+              </div>
+             <div class="component">
+                <button id="submit" class="input-button" type="submit">Submit</button>
+             </div>
+            </form>
+          </div>
+        </div>
+		<p id="footer">Feel free to click on Submit as it will not actually submit data to any server</p>
+		<p id="footer">Submit button is only for validating user inputs</p>
+		<p id="footer">Developed as part of FreeCodeCamp - Responsive Web Design Projects</p>
+	  </div>
+    </div>
+  </body>
+</html>
